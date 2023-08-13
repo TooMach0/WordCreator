@@ -9,18 +9,20 @@ namespace WordCreator
     internal class Abeceda
     {
 
-        int pocetpismen;
         string vybranepismena;
+
+        public int PocetPismen
+        {
+            get; set;
+        }
+
 
         public Abeceda(int pocetpismen)
         {
             PocetPismen = pocetpismen;
         }
 
-        public int PocetPismen
-        {
-            get; set;
-        }
+        
 
         public string Vybranepismena()
         {
@@ -28,12 +30,15 @@ namespace WordCreator
 
             Random random = new Random();
 
-            for (int i = 0; i < pocetpismen; i++)
+
+            for (int i = 0; i < PocetPismen; i++)
             {
-                vybranepismena += 
+                vybranepismena += Abc[random.Next(Abc.Length)]; 
             }
 
-            return vybranepismena;
+            Generator generator = new Generator();
+
+            return generator.Input(vybranepismena) ;
         }
 
         

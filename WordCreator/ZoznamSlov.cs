@@ -8,11 +8,13 @@ namespace WordCreator
 {
     internal class ZoznamSlov
     {
-        static string[] Slova()
-        {
-            string[] Moznosti = new string[] { "auto", "plzen" };
 
-            return Moznosti;
+
+        public List<string> Slova()
+        {
+            List<string> DatabazaSlov = new List<string> { "auto", "plzen" };
+
+            return DatabazaSlov;
         }
     }
 }

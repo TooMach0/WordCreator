@@ -13,8 +13,11 @@ namespace WordCreator
         static void Main(string[] args)
         {
 
+            Abeceda Abeceda = new Abeceda(4);
+            Generator Generator = new Generator();
 
-
+            Generator.Input(Abeceda.Vybranepismena());
+            
 
         }
     }

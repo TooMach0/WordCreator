@@ -8,8 +8,23 @@ namespace WordCreator
 {
     internal class Generator
     {
-        static string Input(string pismena)
+        public string Input(string pismena)
         {
+            ZoznamSlov zoznamSlov = new ZoznamSlov();
+
+            
+            List<string> SlovaVDlzkePismen = new List<string> (){ };
+
+            for (int i = 0; i < zoznamSlov.Slova().Count; i++)
+            {
+                if (zoznamSlov.Slova()[i].Length.Equals(pismena.Length))
+                {
+                    SlovaVDlzkePismen.Add(zoznamSlov.Slova()[i]);
+                }
+            }
+
+
+
             return null;
         }
     }
