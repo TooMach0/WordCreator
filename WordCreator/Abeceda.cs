@@ -33,9 +33,10 @@ namespace WordCreator
 
             for (int i = 0; i < PocetPismen; i++)
             {
+                //zaujimave ze tu to nepadne, vybranepismena je null pri prvom calle
                 vybranepismena += Abc[random.Next(Abc.Length)]; 
             }
-
+            // skor vracaj vybranepismena, posielaj ich do generatora niekde v hlavnej metode
             Generator generator = new Generator();
 
             return generator.Input(vybranepismena) ;

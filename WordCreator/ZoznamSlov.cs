@@ -9,7 +9,7 @@ namespace WordCreator
     internal class ZoznamSlov
     {
 
-
+        //toto cele mohlo byt static, aj DatabazaSlov, ale tu sa asi budu tahat z db?
         public List<string> Slova()
         {
             List<string> DatabazaSlov = new List<string> { "auto", "plzen" };
