@@ -38,7 +38,7 @@ namespace WordCreator
 
             Generator generator = new Generator();
 
-            return generator.Input(vybranepismena) ;
+            return vybranepismena;
         }
 
         
