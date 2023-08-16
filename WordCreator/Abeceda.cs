@@ -39,7 +39,7 @@ namespace WordCreator
             // skor vracaj vybranepismena, posielaj ich do generatora niekde v hlavnej metode
             Generator generator = new Generator();
 
-            return generator.Input(vybranepismena) ;
+            return vybranepismena;
         }
 
         
